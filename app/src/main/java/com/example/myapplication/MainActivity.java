@@ -32,16 +32,19 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.choose_image)
     CustomButton chooseImage;
 
+    String backgroundColor="#ff00ff";
+    String textColor="#000000";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        chooseImage.setBackgroundColor(Color.parseColor("#ff00ff"));
+        chooseImage.setBackgroundColor(Color.parseColor(backgroundColor));
         chooseImage.setTitle(getString(R.string.choose_image));
         chooseImage.setTag(getString(R.string.choose_image));
-        chooseImage.setTextColor(Color.parseColor("#000000"));
+        chooseImage.setTextColor(Color.parseColor(textColor));
         chooseImage.setOnClickListener(v -> chooseImage());
     }
 
