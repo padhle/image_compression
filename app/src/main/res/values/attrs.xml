@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultiShapeButton">
+        <attr name="title_text" format="string"/>
+        <attr name="background_color" format="integer">
+            <enum name="grey" value="1"/>
+            <enum name="dark_brown" value="2"/>
+        </attr>
+        <attr name="title_text_color" format="integer">
+            <enum name="white" value="1"/>
+            <enum name="black" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,2 +1,5 @@
+20 September 2020:
+    -Create compress image and compress folder button on first screen with customization support.
+
 14 september 2020:
 	-Create ScalingUtilities and methods to create bitmaps in it

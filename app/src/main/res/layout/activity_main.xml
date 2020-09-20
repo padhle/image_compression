@@ -6,39 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/destination_view"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:background="#10000000"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/choose_image" />
-
-    <ImageView
-        android:id="@+id/source_view"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="16dp"
-        android:background="#10000000"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/choose_image"
+    <com.example.myapplication.controllers.MultiShapeButton
+        android:id="@+id/compress_image"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        app:title_text="Compress Image"
+        app:background_color="grey"
+        app:title_text_color="white"
+        app:layout_constraintBottom_toTopOf="@+id/compress_folder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.myapplication.controllers.CustomButton
-        android:id="@+id/choose_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+    <com.example.myapplication.controllers.MultiShapeButton
+        android:id="@+id/compress_folder"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        app:title_text="Compress Folder"
+        app:background_color="dark_brown"
+        app:title_text_color="white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/source_view" />
+        app:layout_constraintTop_toBottomOf="@+id/compress_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
